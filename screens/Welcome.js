@@ -43,7 +43,7 @@ const Welcome = ({ navigation }) => {
               }}
             >
               <ButtonText> Logout </ButtonText>
-              <ButtonText> Logout </ButtonText>
+              <ButtonText> start </ButtonText>
             </StyledButton>
           </StyledFormArea>
         </WelcomeContainer>
