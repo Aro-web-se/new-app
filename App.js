@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 
 // // Screen
 // import Login from './screens/Login';
@@ -7,10 +6,8 @@ import React from 'react';
 // import Welcome from './screens/Welcome';
 
 //React Navigator stack
-import RootStack from './Navigator/RootStack';
+import RootStack from "./Navigator/RootStack";
 
 export default function App() {
-  return <RootStack/>;
+  return <RootStack />;
 }
-
-
