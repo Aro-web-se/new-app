@@ -1,6 +1,6 @@
-import styled from 'styled-components/native';
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
-import Constants from 'expo-constants';
+import styled from "styled-components/native";
+import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
+import Constants from "expo-constants";
 
 const StatusBarHeight = Constants.statusBarHeight;
 
@@ -12,10 +12,11 @@ export const colors = {
   brand: "#6D28D9",
   red: "#EF4444",
   green: "#32CD32",
-  midnight: "#4682B4"
+  midnight: "#4682B4",
 };
 
-const { primary, secondary, tertiary, darklight, brand, red, green, midnight} = colors;
+const { primary, secondary, tertiary, darklight, brand, red, green, midnight } =
+  colors;
 
 // Styled Components
 export const StyledContainer = styled.View`
@@ -23,7 +24,6 @@ export const StyledContainer = styled.View`
   padding: 25px;
   padding-top: ${StatusBarHeight + 30}px;
   background-color: ${primary};
-  
 `;
 
 export const InnerContainer = styled.View`
@@ -67,8 +67,6 @@ export const WlecomeImage = styled.Image`
   min-width: 100px;
 `;
 
-
-
 export const PageTitle = styled.Text`
   font-size: 18px;
   text-align: center;
@@ -76,15 +74,14 @@ export const PageTitle = styled.Text`
   color: ${brand};
   padding: 15px;
 
-
-
-  ${(props) => props.Welcome && `
+  ${(props) =>
+    props.Welcome &&
+    `
       font-size: 35px;
     `}
 `;
 
-
-export const SubTitle = styled.Text`
+export const SubTitle1 = styled.Text`
   font-size: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -92,8 +89,25 @@ export const SubTitle = styled.Text`
   font-weight: bold;
   color: ${tertiary};
 
+  ${(props) =>
+    props.Welcome &&
+    `
+      margin-bottom: 5px;
+      font-weight: normal;
+    `}
+`;
 
-  ${(props) => props.Welcome && `
+export const SubTitle2 = styled.Text`
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: ${midnight};
+
+  ${(props) =>
+    props.Welcome &&
+    `
       margin-bottom: 5px;
       font-weight: normal;
     `}
@@ -109,8 +123,7 @@ export const ExtraSubTitle = styled.Text`
   color: ${tertiary};
   text-align: center;
   color: ${midnight};
-  `;
-
+`;
 
 export const StyledFormArea = styled.View`
   width: 90%;
@@ -155,7 +168,9 @@ export const StyledButton = styled.TouchableOpacity`
   margin-vertical: 5px;
   height: 60px;
 
-  ${(props) => props.google == true &&`
+  ${(props) =>
+    props.google == true &&
+    `
       background-color: ${green};
       flex-direction: row;
       justify-content: center;
@@ -166,7 +181,9 @@ export const ButtonText = styled.Text`
   color: ${primary};
   font-size: 16px;
 
-  ${(props) => props.google == true &&`
+  ${(props) =>
+    props.google == true &&
+    `
       padding: 5px;
     `}
 `;
@@ -186,25 +203,25 @@ export const Line = styled.View`
 `;
 
 export const Extraview = styled.View`
-    justify-content: center;
-    flex-direction: row;
-    align-item: center;
-    padding: 10px;
+  justify-content: center;
+  flex-direction: row;
+  align-item: center;
+  padding: 10px;
 `;
 
 export const ExtraText = styled.Text`
-    justify-content: center;
-    align-content: center;
-    color: ${tertiary};
-    font-size: 16px;
+  justify-content: center;
+  align-content: center;
+  color: ${tertiary};
+  font-size: 16px;
 `;
 
 export const TextLink = styled.TouchableOpacity`
-    justify-content: center;
-    align-content: center;
+  justify-content: center;
+  align-content: center;
 `;
 
 export const TextLinkContent = styled.Text`
-    color: ${brand};
-    font-size: 15px;
+  color: ${brand};
+  font-size: 15px;
 `;
