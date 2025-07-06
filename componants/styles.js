@@ -87,7 +87,7 @@ export const SubTitle1 = styled.Text`
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: ${midnight};
+  color: ${tertiary};
 
   ${(props) =>
     props.Welcome &&
@@ -103,7 +103,7 @@ export const SubTitle2 = styled.Text`
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: ${tertiary};
+  color: ${midnight};
 
   ${(props) =>
     props.Welcome &&
