@@ -43,6 +43,12 @@ const Welcome = ({ navigation }) => {
               }}
             >
               <ButtonText> Logout </ButtonText>
+            </StyledButton>
+            <StyledButton
+              onPress={() => {
+                navigation.navigate("inapp");
+              }}
+            >
               <ButtonText> start </ButtonText>
             </StyledButton>
           </StyledFormArea>
