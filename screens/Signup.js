@@ -65,7 +65,7 @@ const Signup = ({ navigation }) => {
         <StatusBar style="dark" />
         <InnerContainer>
           <SubTitle2>Implemented by NIT Jamshedpur </SubTitle2>
-          <SubTitle1>1Account Signup</SubTitle1>
+          <SubTitle1>Account Signup</SubTitle1>
 
           {show && (
             <DateTimePicker

@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import {
   InnerContainer,
   PageTitle,
-  SubTitle,
+  SubTitle1,
   StyledFormArea,
   StyledButton,
   ButtonText,
@@ -30,7 +30,7 @@ const Welcome = ({ navigation }) => {
 
         <WelcomeContainer>
           <PageTitle Welcome={true}>Welcome! to Smart </PageTitle>
-          <SubTitle Welcome={true}> Get Connected, Stay in Control</SubTitle>
+          <SubTitle1 Welcome={true}> Get Connected, Stay in Control</SubTitle1>
           <StyledFormArea>
             <Avater
               resizeMode="cover"
