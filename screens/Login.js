@@ -76,6 +76,7 @@ const Login = ({ navigation }) => {
           </ExtraSubTitle>
           <SubTitle2>Implemented by NIT Jamshedpur </SubTitle2>
           <SubTitle1>Account Login</SubTitle1>
+          <SubTitle1>Account Login</SubTitle1>
 
           <Formik
             initialValues={{ email: "", password: "" }}
